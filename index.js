@@ -22,11 +22,12 @@ let allWagesFor = function () {
 }
 
 let createEmployeeRecord = args => {
+    let [firstName, familyName, title, payPerHour] = args;
     return {
-        firstName: args[0],
-        familyName: args[1],
-        title: args[2],
-        payPerHour: args[3],
+        firstName,
+        familyName,
+        title,
+        payPerHour,
         timeInEvents: [],
         timeOutEvents: [],
     }
